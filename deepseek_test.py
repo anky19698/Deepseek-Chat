@@ -4,8 +4,7 @@ import os
 
 
 def get_model(selected_model_name):
-    # groq_api_key = st.secrets['groq_api_key']
-    api_key = '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'
+    groq_api_key = st.secrets['groq_api_key']
     model_name = 'deepseek-r1-distill-llama-70b'
 
     groq_api_key = api_key
