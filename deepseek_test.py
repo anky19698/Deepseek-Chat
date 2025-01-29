@@ -58,7 +58,7 @@ def main():
     # models_dict = get_llm_models()
     model = get_model()
 
-    print("Current Model:", selected_model)
+    # print("Current Model:", selected_model)
 
     # Initialize chat history in session state if it doesn't exist
     if 'chat_history' not in st.session_state:
