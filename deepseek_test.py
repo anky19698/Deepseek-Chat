@@ -3,7 +3,7 @@ from langchain_groq import ChatGroq
 import os
 
 
-def get_model(selected_model_name):
+def get_model():
     groq_api_key = st.secrets['groq_api_key']
     model_name = 'deepseek-r1-distill-llama-70b'
 
