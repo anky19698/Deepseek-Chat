@@ -10,7 +10,7 @@ def get_model(selected_model_name):
     groq_api_key = api_key
     os.environ['GROQ_API_KEY'] = groq_api_key
 
-    model_name = selected_model_name
+    # model_name = selected_model_name
 
     model = ChatGroq(
         model=model_name
@@ -52,11 +52,11 @@ def main():
     st.title(":whale: Deepseek R1 Chat ")
 
     # Model Selection
-    selected_model = st.sidebar.selectbox("Select LLM Model", options=list(get_llm_models().keys()), index=0)
+    # selected_model = st.sidebar.selectbox("Select LLM Model", options=list(get_llm_models().keys()), index=0)
 
     # Get Model
-    models_dict = get_llm_models()
-    model = get_model(selected_model_name=models_dict[selected_model])
+    # models_dict = get_llm_models()
+    model = get_model()
 
     print("Current Model:", selected_model)
 
